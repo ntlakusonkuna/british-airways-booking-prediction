@@ -148,24 +148,15 @@ The model correctly identified 560 completed bookings while missing 936 actual b
 
 ![Confusion Matrix](images/confusion_matrix.png)
 
+
+```markdown
 ## Project Files
 
-```text
-british-airways-booking-prediction/
-│
-├── images/
-│   ├── booking_distribution.png
-│   ├── confusion_matrix.png
-│   └── feature_importance.png
-│
-├── notebooks/
-│   └── british_airways_booking_prediction.ipynb
-│
-├── presentation/
-│   └── British_Airways_Task_2_Predicting_Customer_Booking_Behaviour.pptx
-│
-├── requirements.txt
-└── README.md
+- `notebooks/` — Jupyter Notebook containing the complete analysis
+- `images/` — Project visualizations
+- `presentation/` — Final British Airways presentation
+- `requirements.txt` — Python dependencies
+- `README.md` — Project documentation
 Tools & Technologies
 Python
 Pandas
