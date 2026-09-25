@@ -2,22 +2,22 @@
 
 ## Project Overview
 
-This project was completed as part of the British Airways Data Science virtual experience on Forage.
+This project was completed as part of the British Airways Data Science Virtual Experience on Forage.
 
-The objective was to build a machine learning model that predicts whether a customer is likely to complete a flight booking based on customer and flight-related information.
+The objective was to build a machine learning model that predicts whether a customer completes a flight booking based on customer and flight-related information.
 
-The project focused on data preparation, exploratory analysis, machine learning, model evaluation, cross-validation, and feature importance analysis.
+The project covers data preparation, exploratory analysis, machine learning, model evaluation, cross-validation, and feature importance analysis.
 
 ## Business Problem
 
-Understanding which customer and booking characteristics contribute most to booking completion can help a business better understand customer behavior and identify useful signals for future customer engagement and marketing analysis.
+Understanding which customer and booking characteristics contribute most to booking completion can help identify useful predictive signals for customer behavior and future marketing analysis.
 
 The target variable was:
 
 - `booking_complete = 1` — booking completed
 - `booking_complete = 0` — booking not completed
 
-The dataset contained 50,000 customer booking records.
+The dataset contains 50,000 customer booking records.
 
 ## Dataset
 
@@ -63,7 +63,7 @@ The analysis followed these steps:
 
 A Random Forest Classifier was used because it can model nonlinear relationships and provides feature importance information.
 
-Model configuration:
+### Model Configuration
 
 - 200 decision trees
 - `class_weight="balanced"`
@@ -117,21 +117,21 @@ Feature importance represents the model's reliance on these variables for predic
 
 The model produced the following results on the test set:
 
-| | Predicted No Booking | Predicted Booking |
+| Actual | Predicted No Booking | Predicted Booking |
 |---|---:|---:|
-| Actual No Booking | 7,664 | 840 |
-| Actual Booking | 936 | 560 |
+| No Booking | 7,664 | 840 |
+| Booking | 936 | 560 |
 
 The model correctly identified 560 completed bookings while missing 936 actual bookings.
 
 ## Key Findings
 
-- Booking completion was relatively uncommon in the dataset, with 14.96% of records representing completed bookings.
+- Booking completion represented 14.96% of records in the dataset.
 - Booking origin was the strongest variable according to permutation importance.
 - Route was the second strongest predictive variable.
 - Length of stay and sales channel also contributed meaningful predictive information.
 - The Random Forest achieved a test ROC-AUC of 79.40%.
-- Cross-validation produced a similar ROC-AUC of 78.14%, suggesting consistent model performance.
+- Cross-validation produced a similar ROC-AUC of 78.14%.
 - Feature importance identifies predictive contribution rather than causation.
 
 ## Project Visualizations
@@ -148,8 +148,6 @@ The model correctly identified 560 completed bookings while missing 936 actual b
 
 ![Confusion Matrix](images/confusion_matrix.png)
 
-
-```markdown
 ## Project Files
 
 - `notebooks/` — Jupyter Notebook containing the complete analysis
@@ -157,22 +155,25 @@ The model correctly identified 560 completed bookings while missing 936 actual b
 - `presentation/` — Final British Airways presentation
 - `requirements.txt` — Python dependencies
 - `README.md` — Project documentation
-Tools & Technologies
-Python
-Pandas
-NumPy
-Matplotlib
-Scikit-learn
-Jupyter Notebook
-Random Forest
-One-Hot Encoding
-Cross-Validation
-Permutation Importance
-Classification Metrics
-Certification / Experience
+
+## Tools & Technologies
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Jupyter Notebook
+- Random Forest
+- One-Hot Encoding
+- Cross-Validation
+- Permutation Importance
+- Classification Metrics
+
+## Certification / Experience
 
 Completed as part of the British Airways Data Science Virtual Experience on Forage.
 
-Author
+## Author
 
 Ntlakuso Nkuna
